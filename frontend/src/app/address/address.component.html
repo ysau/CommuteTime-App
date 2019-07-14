@@ -1,0 +1,7 @@
+<div id="container">
+  <h1> {{question}} </h1>
+  <app-city-search #box (selected)="onSelect($event)"></app-city-search>
+  <div *ngIf="box.showSuggestions==false">
+    <button (click)="redirect()">Confirm</button>
+  </div>
+</div>

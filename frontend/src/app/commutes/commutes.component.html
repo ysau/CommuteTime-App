@@ -1,0 +1,16 @@
+<h2>Home: {{home | uppercase }} </h2>
+<div><span>work1: </span>{{work1}}</div>
+<div><span>work2: </span>{{work2}}</div>
+
+<button (click)="reset()">Reset</button>
+
+
+<div *ngIf="showMap==false">
+  <app-city-search #box1 [title]="title1" (selected)="onSelect1($event)"></app-city-search>
+  <app-city-search #box2 [title]="title2" (selected)="onSelect2($event)"></app-city-search>
+</div>
+
+<div *ngIf="showMap">
+  <app-maps [origin]="home" [destination]="work1"></app-maps>
+  <app-maps [origin]="home" [destination]="work2"></app-maps>
+</div>

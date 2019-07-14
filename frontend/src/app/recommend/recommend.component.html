@@ -1,0 +1,23 @@
+<div class="vertical-spacer"></div>
+<div class="horizontal-spacer-1"></div>
+<div *ngIf="showMap===false">
+  <div class="horizontal-spacer-2"></div>
+</div>
+<div class="message-box-1">
+  <h1 style="font-size:50px;"> {{ home }}</h1>
+  <h1>{{ message }}</h1></div>
+<div class="horizontal-spacer-3"></div>
+<div *ngIf="showMap" class="commute-container">
+  <div class="message-box-2">
+    <h1> Morning Commute </h1>
+  </div>
+  <div class="map-container">
+    <app-maps [origin]="home" [destination]="work_address"></app-maps>
+  </div>
+  <div class="map-container">
+    <app-maps [origin]="home" [destination]="other_work_address"></app-maps>
+  </div>
+</div>
+<div class="button-container">
+  <button (click)="redirect()">Search for apartment</button>
+</div>

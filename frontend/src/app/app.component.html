@@ -1,0 +1,18 @@
+<nav>
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+true}"></a></li>
+    <li><a routerLink="address" routerLinkActive="active-link"></a></li>
+    <li><a routerLink="otheraddress" routerLinkActive="active-link"></a></li>
+    <li><a routerLink="recommend" routerLinkActive="active-link"></a></li>
+  </ul>
+</nav>
+<div id="app-container">
+  <router-outlet></router-outlet>
+</div>
+<footer>
+  <a href="https://github.com/ysau/CommuteTime-App" target="_blank"><p><strong>What is Commute Time?</strong></p></a>
+</footer>
+<div id="reset">
+  <button (click)="redirect()">&laquo;</button>
+</div>

@@ -1,0 +1,103 @@
+.horizontal-spacer-1 {
+  width: 80vw;
+  height: 5vh;
+  position: static;
+  float: top;
+}
+
+.horizontal-spacer-2 {
+  width: 80vw;
+  height: 25vh;
+  position: static;
+  float: top;
+}
+
+.horizontal-spacer-3 {
+  width: 80vw;
+  height: 5vh;
+  position: static;
+  float: top;
+}
+
+.vertical-spacer {
+  width: 80px;
+  height: 90vh;
+  position: static;
+  float: left;
+}
+
+.message-box-1 {
+  width: 800px;
+  height: 10vh;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  float: top;
+  text-align: left;
+  color: white;
+  font-family: arial;
+  line-height: 1.7em;
+}
+
+.message-box-2 {
+  width: 300px;
+  height: 70px;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  float: top;
+  text-align: center;
+  color: white;
+  font-family: arial;
+  line-height: 1.7em;
+}
+
+.commute-container {
+  width: 85vw;
+  height: 53vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: top;
+  text-align: left;
+  color: white;
+  font-family: arial;
+  line-height: 1.7em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+}
+
+.map-container {
+  width: 34vw;
+  height: 45vh;
+  position: relative;
+  float: left;
+  padding-left: 4vw;
+  padding-right: 3vw;
+  text-align: left;
+  color: white;
+  font-family: arial;
+  line-height: 1.7em;
+}
+
+.button-container {
+  width: 400px;
+  height: 100px;
+  position: static;
+  float: top;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: deepskyblue;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  margin: 30px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+}

@@ -1,0 +1,21 @@
+<div id="search-component">
+
+  <input #searchBox
+         [(ngModel)]="selectedCity"
+         (keyup)="search(searchBox.value)"
+         (keyup.enter)="onEnter(searchBox.value)"
+         (focus)="onFocus(searchBox.value)"
+         (keyup.backspace)="onBackspace(searchBox.value)"
+         id="search-box"
+  />
+
+  <div *ngIf="showSuggestions">
+    <ul class="search-result">
+      <li (click)="onClick(city)"
+          *ngFor="let city of cities$ | async">
+        <p> {{city}}</p>
+      </li>
+    </ul>
+  </div>
+
+</div>

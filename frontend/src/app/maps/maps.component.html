@@ -1,0 +1,5 @@
+<h2>Home: {{origin}}</h2>
+<h2>Work: {{destination}}</h2>
+<iframe id="map"
+        [src]="sanitizer.bypassSecurityTrustResourceUrl(mapURL)"
+        allowfullscreen></iframe>

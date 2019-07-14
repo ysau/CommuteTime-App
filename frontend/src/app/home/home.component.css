@@ -1,0 +1,23 @@
+#container {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -225px;
+  margin-top: -125px;
+  text-align: center;
+  color: white;
+  font-family: arial;
+  line-height: 1.7em;
+}
+
+button {
+  background-color: deepskyblue;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+}
