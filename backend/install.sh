@@ -9,7 +9,7 @@ source ./.env
 
 
 function main() {
-`cd ~/`
+cd ~/
 install_nginx
 config_nginx
 install_SSL
@@ -55,11 +55,14 @@ sudo printf '}' >> $conf
 
 function install_SSL() {
 printf '%s\n' 'installing SSL certificate... '
-cd ~/
-git clone https://github.com/letsencrypt/letsencrypt
-cd letsencrypt
+sudo apt-get update
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get -y install certbot python-certbot-nginx
 printf '\e[1;34m%-6s\e[m%s\n' 'Select "(2) Redirect - Make all requests redirect to secure HTTPS access" when prompted'
-sudo ./letsencrypt-auto --nginx
+sudo certbot --nginx
 printf '%s\n' 'installing SSL certificate... Done'
 }
 
